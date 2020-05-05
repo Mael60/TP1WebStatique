@@ -2,11 +2,74 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title> Titre </title>
+        <title> TextListForms </title>
     </head>
     <body>
         <a href="textListForms.html">textes&amp;Listes&amp;Formulaires</a> 
         &verbar;<a href="tables.html">Tableaux</a>
         &verbar;<a href="medias.html">Médias</a>
+        <hr>
+        <ul>
+            <li>Etudiants</li>
+            <li>Enseignants</li>
+            <li>Abréviations</li>
+        </ul>
+        <hr>
+        <ol>
+            <h1><li>Etudiants</li></h1>
+            <form action="textListForms.html" method="GET">
+                Prénom:
+                <input type="text" name="prenom">
+                Nom:
+                <input type="text" name="nom">
+                <br>
+                Année d'étude:
+                <input type="radio" name="annee"> A1
+                <input type="radio" name="annee"> A2
+                <input type="radio" name="annee"> A3
+                <br>
+                Remarques:
+                <br>
+                <textarea name="remarques"></textarea>
+                <br>
+                <input type="submit">
+                <br>
+            </form>
+            <hr>
+    
+            <h1><li>Enseignants</li></h1>
+            <form action="textListForms.html" method="POST">
+                Prénom:
+                <input type="text" name="prenom">
+                Nom:
+                <input type="text" name="nom">
+                <br>
+                Site:
+                <p>
+                    <select name="site">
+                        <option>Nantes</option>
+                        <option>Rennes</option>
+                        <option>Brest</option>
+                    </select>
+                </p>
+                <br>
+                Mot de passe:
+                <input type="hidden" name="password" >
+                <br>
+                <input type="submit">
+            </form>
+            <hr>
+            <h1><li>Abréviations</li></h1>
+            <dl>
+                <dt>ISEN</dt>
+                <dd>Institut Supérieur de l'électronique et du numérique</dd>
+            </dl>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper text Markup language</dd>
+            </dl>
+            <hr>
+        </ol>
+
     </body>
 </html>
