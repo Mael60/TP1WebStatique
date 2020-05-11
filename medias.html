@@ -2,9 +2,79 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title> Titre </title>
+        <title> Medias </title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <style>
+        table, td, th {border: 1px solid}
+    </style>
     </head>
     <body>
-        Contenu
+        <a href="textListForms.html">textes&amp;Listes&amp;Formulaires</a> 
+        &verbar;<a href="tables.html">Tableaux</a>
+        &verbar;<a href="medias.html">Médias</a>
+        <hr>
+        <br>
+        <ol>
+            <li>Image</li>
+            <li>Vidéo1</li>
+            <li>Vidéo2</li>
+            <li>Audio</li>
+            <li>Frame</li>
+        </ol>
+        <hr>
+        <br>
+        <h1>Manipulation des Médias et HTML</h1>
+        <br>
+        <h3>Images<span class="material-icons">
+            insert_photo
+            </span></h3>
+        <br>
+
+        <table>
+            <tr><td rowspan="2"><img src="Images/nantes.jpg" alt="erreur" width="72" height="72"></td>
+                <td>
+                    <svg width="100" height="100">
+                        <rect width="100" height="100" stroke="green" stroke-width="4" fill="yellow" />
+                      </svg>
+            </td>
+                <td><img src="Images/nantes.jpg" alt="erreur" width="72" height="72"></td></tr>
+            <tr><td>non disponible</td><td><img src="Images/nantes.jpg" alt="erreur" width="72" height="72"></td></tr>
+        </table>
+        <br>
+        <h3>Vidéo1<span class="material-icons">
+            movie_creation
+        </span></h3>
+
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7gwK1dcz0IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <h3>Vidéo2<span class="material-icons">
+            movie_creation
+            </span></h3>
+        <br>
+        <video width="320" height="240" controls>
+            <source src="Vidéos/windtunnel.mp4" type="video/mp4">
+            <source src="Vidéos/windtunnel.ogg" type="video/ogg">
+            <source src="Vidéos/windtunnel.webm" type="video/webm">
+        </video>
+        <br>
+
+        <h3>Audio<span class="material-icons">
+            audiotrack
+            </span></h3>
+        <br>
+        <audio controls>
+            <source src="Audio/audio.mp3.m4a" type="audio/mp3">
+        </audio>
+        <br>
+
+        <h3>iframe<span class="material-icons">
+            link
+            </span></h3>
+        <br>
+        <iframe src="https://www.isen-nantes.fr/" width="400" height="400" name="nom"></iframe>
+        <br>
+
     </body>
 </html>
